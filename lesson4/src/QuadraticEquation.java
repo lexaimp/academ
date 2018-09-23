@@ -12,21 +12,26 @@ public class QuadraticEquation {
         double b = scanner.nextDouble();
         System.out.print("c = ");
         double c = scanner.nextDouble();
+        double x;
 
-        if ((a - 0 <= epsilon) && (b - 0 <= epsilon)) {
+        if ((a <= epsilon) && (b <= epsilon)) {
             System.out.println("Коэфиенты не могут быт равны нулю");
+        } else if (a <= epsilon) {
+            x = -c / b;
+            System.out.println("x = " + x);
         } else {
             double discriminant = Math.pow(b, 2) - 4 * a * c;
-            if (discriminant < 0) {
+            System.out.println(discriminant);
+            if (discriminant < epsilon) {
                 System.out.println("Корней нет");
             } else if (discriminant == 0) {
-                double x1 = (-b + Math.sqrt(discriminant)) / 2 * a;
+                double x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
                 System.out.println("1 корень");
                 System.out.println("x = " + x1);
             } else {
-                double x1 = (-b + Math.sqrt(discriminant)) / 2 * a;
+                double x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
                 System.out.println("x1 = " + x1);
-                double x2 = (-b - Math.sqrt(discriminant)) / 2 * a;
+                double x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
                 System.out.println("x2 = " + x2);
             }
         }
