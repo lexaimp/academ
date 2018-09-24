@@ -20,7 +20,10 @@ public class NextDate {
         boolean nextDay = month != 2 && ((month % 2 == 0 && day == 30) || (day == 31));
         boolean nextDatFebruary = (leapYear && day == 28) || (!leapYear && day == 29);
         boolean dateError = day > 31 || month > 12;
-        if (!dateError && (nextDay || nextDatFebruary)) {
+        if ((month % 2 == 0 && day > 30) || (day > 31) || (month > 12) || (day <= 0 || month <= 0 || year <= 0)) {
+            System.out.println("Введена ошибочная дата");
+            return;
+        } else if (!dateError && (nextDay || nextDatFebruary)) {
             day = 1;
             month++;
             if (month > 12) {
