@@ -6,22 +6,22 @@ public class AreaTriangle {
         System.out.println("Введите координаты точек треугольника:");
 
         System.out.print("x1 = ");
-        double x1 = scanner.nextInt();
+        double x1 = scanner.nextDouble();
         System.out.print("y1 = ");
-        double y1 = scanner.nextInt();
+        double y1 = scanner.nextDouble();
 
         System.out.print("x2 = ");
-        double x2 = scanner.nextInt();
+        double x2 = scanner.nextDouble();
         System.out.print("y2 = ");
-        double y2 = scanner.nextInt();
+        double y2 = scanner.nextDouble();
 
         System.out.print("x3 = ");
-        double x3 = scanner.nextInt();
+        double x3 = scanner.nextDouble();
         System.out.print("y3 = ");
-        double y3 = scanner.nextInt();
+        double y3 = scanner.nextDouble();
         double epsilon = 1.0e-10;
 
-        if (Math.abs((x1 - x3) * (y2 - y3) - (x2 - x3) * (y1 - y3)) - 0 <= epsilon) {
+        if (Math.abs((x1 - x3) * (y2 - y3) - (x2 - x3) * (y1 - y3)) <= epsilon) {
             System.out.println("Точки лежат на одной прямой");
         } else {
             //Способ 1 не из условия
