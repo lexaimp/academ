@@ -1,16 +1,11 @@
 public class Average {
     public static void main(String[] args) {
 //        todo дорешать
-        int i = 0;
         int initialValue = 3;
         int finalValue = 6;
-        int count = finalValue - initialValue;
-        while (i <= count) {
-            initialValue += i;
-            ++i;
+        for (int i = 0; i <= finalValue - initialValue; i++) {
+            initialValue += initialValue + 1;
+            System.out.println(initialValue);
         }
-        System.out.println(initialValue);
-        finalValue += 1;
-        System.out.println(finalValue);
     }
 }
