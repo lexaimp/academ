@@ -19,11 +19,12 @@ public class NextDate {
         }
         boolean nextDay = month != 2 && ((month % 2 == 0 && day == 30) || (day == 31));
         boolean nextDatFebruary = (leapYear && day == 28) || (!leapYear && day == 29);
-        boolean dateError = day > 31 || month > 12;
-        if ((month % 2 == 0 && day > 30) || (day > 31) || (month > 12) || (day <= 0 || month <= 0 || year <= 0)) {
+        boolean errorMax = (month % 2 == 0 && day > 30) || (day > 31) || (leapYear && day > 28) || (!leapYear && day > 29);
+        boolean errorMin = (month > 12) || (day <= 0 || month <= 0 || year <= 0);
+        if (errorMax || errorMin) {
             System.out.println("Введена ошибочная дата");
             return;
-        } else if (!dateError && (nextDay || nextDatFebruary)) {
+        } else if (nextDay || nextDatFebruary) {
             day = 1;
             month++;
             if (month > 12) {
