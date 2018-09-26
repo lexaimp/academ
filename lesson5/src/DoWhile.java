@@ -1,4 +1,4 @@
-public class Average {
+public class DoWhile {
     public static void main(String[] args) {
         int initialValue = 3;
         int finalValue = 6;
@@ -8,7 +8,7 @@ public class Average {
         int sum1 = 0;
         int sum2 = 0;
 
-        while (i <= finalValue) {
+        do{
             if (i % 2 == 0) {
                 sum1 += i;
                 ++k;
@@ -16,7 +16,7 @@ public class Average {
             sum2 += i;
             ++i;
             ++j;
-        }
+        } while (i <= finalValue);
         System.out.println(sum1 / k);
         System.out.println(sum2 / j);
     }
