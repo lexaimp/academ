@@ -3,21 +3,21 @@ public class Average {
         int initialValue = 3;
         int finalValue = 6;
         int i = initialValue;
-        int j = 0;
-        int k = 0;
+        int count1 = 0;
+        int count2 = 0;
         int sum1 = 0;
         int sum2 = 0;
 
         while (i <= finalValue) {
             if (i % 2 == 0) {
                 sum1 += i;
-                ++k;
+                ++count2;
             }
             sum2 += i;
             ++i;
-            ++j;
+            ++count1;
         }
-        System.out.println(sum1 / k);
-        System.out.println(sum2 / j);
+        System.out.println(sum1 / count2);
+        System.out.println(sum2 / count1);
     }
 }
