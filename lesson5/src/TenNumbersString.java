@@ -9,7 +9,7 @@ public class TenNumbersString {
             }
             ++i;
         }
-        //todo доделать форматирование
+
         int x = 4;
         int y = 54;
         int n = 3;

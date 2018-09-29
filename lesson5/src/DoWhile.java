@@ -9,7 +9,7 @@ public class DoWhile {
         int sum1 = 0;
         int sum2 = 0;
 
-        do{
+        do {
             if (i % 2 == 0) {
                 sum1 += i;
                 ++k;

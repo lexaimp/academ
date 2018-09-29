@@ -19,22 +19,22 @@ public class NextDateNew {
         }
         boolean trueYear = year > 0;
         boolean trueMonth = month > 0 && month <= 12;
-        switch (month){
+        switch (month) {
             case 4:
             case 6:
             case 9:
             case 11:
                 boolean day30;
             case 2:
-                if (leapYear && day == 28) || (!leapYear && day == 29){
-                    boolean day;
+                if (leapYear && day == 28) ||(!leapYear && day == 29) {
+                boolean day;
             }
             break;
-                day = 1;
+            day = 1;
             default:
         }
         boolean day31 = false;
-        boolean trueDay = day > 0 && (month == 2 && (day == 28 && leapYear) || (day == 28 && !leapYear) || ()day>31)
+        boolean trueDay = day > 0 && (month == 2 && (day == 28 && leapYear) || (day == 28 && !leapYear) || () day > 31)
         System.out.println(day + "." + month + "." + year);
     }
 }

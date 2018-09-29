@@ -1,4 +1,5 @@
-//import
+//todo
+
 import java.util.Scanner;
 
 public class NextDate {
