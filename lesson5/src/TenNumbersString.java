@@ -1,24 +1,29 @@
+//import
 public class TenNumbersString {
     public static void main(String[] args) {
-        int i = 0;
-        while (i <= 99) {
-            if (i % 10 <= 0) {
+        int i = 1;
+        while (i <= 100) {
+            System.out.printf("%4d", i);
+            if (i % 10 == 0) {
                 System.out.print(System.lineSeparator());
             }
             ++i;
-            System.out.printf("%4d", i);
         }
         //todo доделать форматирование
-        int x = 1;
-        int y = 100;
-        int n = 10;
+        int x = 4;
+        int y = 54;
+        int n = 3;
         int j = x;
+        int count = 1;
+        System.out.println();
+
         while (j <= y) {
-            if (j % n == 0) {
+            System.out.printf("%4d", j);
+            if (count % n == 0) {
                 System.out.print(System.lineSeparator());
             }
-            System.out.printf("%4d", j);
             ++j;
+            count++;
         }
     }
 }

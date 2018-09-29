@@ -1,5 +1,4 @@
-// посмореть доделать
-
+// done
 import java.util.Scanner;
 
 public class Fibonacci {
