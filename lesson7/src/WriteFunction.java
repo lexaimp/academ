@@ -1,8 +1,10 @@
-public class Fu {
+public class WriteFunction {
     public static void main(String[] args) {
         System.out.println(getSum(5, 6));
         System.out.println(getSum(143, 25));
-        System.out.println(getAverage(3,6));
+        System.out.println(getAverage(3, 6));
+        System.out.println(getMax(12.65, 45.234));
+        System.out.println(getMin(12.65, 45.234));
     }
 
     private static double getSum(double x, double y) {
@@ -17,5 +19,15 @@ public class Fu {
             count++;
         }
         return (double) sum / count;
+    }
+
+    private static double getMax(double x, double y) {
+        double epsilon = 1.0e-10;
+        return (x - y > epsilon) ? x : y;
+    }
+
+    private static double getMin(double x, double y) {
+        double epsilon = 1.0e-10;
+        return (x - y < epsilon) ? x : y;
     }
 }

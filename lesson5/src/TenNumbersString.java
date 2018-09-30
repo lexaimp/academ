@@ -9,7 +9,6 @@ public class TenNumbersString {
             }
             ++i;
         }
-
         int x = 4;
         int y = 54;
         int n = 3;

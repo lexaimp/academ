@@ -1,3 +1,4 @@
+//todo доделать
 import java.util.Scanner;
 
 public class Evklid {
