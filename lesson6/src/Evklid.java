@@ -9,10 +9,15 @@ public class Evklid {
         System.out.print("b = ");
         int b = scanner.nextInt();
 
-        while (a > b) {
+        if (a > b) {// не проверять это условие
             if (a % b == 0) {
                 System.out.println(a);
             }
+        }else {
+            if (b % a == 0) {
+                System.out.println(a);
+            }
+            System.out.println(a + b);
         }
     }
 }
