@@ -1,10 +1,11 @@
-//import2
-public class Reboot {
+//import 2
+public class Overload {
     public static void main(String[] args) {
         System.out.println(getTypeSize((byte) 3));
         System.out.println(getTypeSize((short) 3548));
         System.out.println(getTypeSize(1058));
         System.out.println(getTypeSize((long) 354));
+        System.out.println(getTypeSize((float) 674.448));
         System.out.println(getTypeSize(2547.4586));
     }
 
@@ -22,6 +23,10 @@ public class Reboot {
 
     private static int getTypeSize(long value) {
         return 8;
+    }
+
+    private static int getTypeSize(float value) {
+        return 4;
     }
 
     private static int getTypeSize(double value) {

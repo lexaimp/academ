@@ -1,4 +1,4 @@
-//import
+//import 2
 
 import java.util.Scanner;
 
@@ -8,24 +8,23 @@ public class DigitsNumber {
         System.out.print("Введите число: ");
         int number = scanner.nextInt();
         int sum = 0;
-        int sum1;
         int sumOdd = 0;
-        int max = 0;
+        int maxNumeral = 0;
 
         while (number != 0) {
             sum += number % 10;
-            sum1 = number % 10;
-            if (max < sum1) {
-                max = sum1;
+            int numeral = number % 10;
+            if (maxNumeral < numeral) {
+                maxNumeral = numeral;
             }
-            if (sum1 % 2 != 0) {
-                sumOdd += sum1;
+            if (numeral % 2 != 0) {
+                sumOdd += numeral;
             }
             number /= 10;
         }
         System.out.println("Сумма цифр чила: " + sum);
         System.out.println("Cумма нечётных цифр числа: " + sumOdd);
-        System.out.println("Максимальная цифра числа: " + max);
+        System.out.println("Максимальная цифра числа: " + maxNumeral);
     }
 
 }

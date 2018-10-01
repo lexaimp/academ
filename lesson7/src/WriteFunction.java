@@ -1,3 +1,4 @@
+//done
 public class WriteFunction {
     public static void main(String[] args) {
         System.out.println(getSum(5, 6));

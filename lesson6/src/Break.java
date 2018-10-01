@@ -1,4 +1,4 @@
-//import
+//import 2
 
 import java.util.Scanner;
 
@@ -7,14 +7,12 @@ public class Break {
         Scanner scanner = new Scanner(System.in);
 
         String enigmaticString = "qwerty";
-        System.out.println("Введите загаданную строку:");
-        String enigmaticStringUser = scanner.nextLine();
         for (; ; ) {
+            System.out.println("Введите загаданную строку:");
+            String enigmaticStringUser = scanner.nextLine();
             if (enigmaticString.equals(enigmaticStringUser)) {
                 break;
             }
-            System.out.println("Введите загаданную строку:");
-            enigmaticStringUser = scanner.nextLine();
         }
     }
 }

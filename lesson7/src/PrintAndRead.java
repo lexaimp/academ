@@ -1,3 +1,5 @@
+//import 2
+
 import java.util.Scanner;
 
 public class PrintAndRead {
@@ -10,7 +12,6 @@ public class PrintAndRead {
         System.out.println(text);
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        System.out.println(number);
         return number;
     }
 }

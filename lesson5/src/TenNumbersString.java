@@ -1,4 +1,4 @@
-//import
+//done
 public class TenNumbersString {
     public static void main(String[] args) {
         int i = 1;

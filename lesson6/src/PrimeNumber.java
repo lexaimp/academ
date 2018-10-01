@@ -1,4 +1,4 @@
-//import
+//import 2
 
 import java.util.Scanner;
 
@@ -9,18 +9,16 @@ public class PrimeNumber {
         System.out.print("Введите число: ");
         int number = scanner.nextInt();
 
-        boolean primeNumber = true;
         for (int i = 2; i <= number; i++) {
+            boolean isPrimeNumber = true;
             for (int j = 2; j < i; j++) {
                 if (i % j == 0) {
-                    primeNumber = false;
+                    isPrimeNumber = false;
                     break;
                 }
             }
-            if (primeNumber) {
+            if (isPrimeNumber) {
                 System.out.println(i);
-            } else {
-                primeNumber = true;
             }
         }
     }
