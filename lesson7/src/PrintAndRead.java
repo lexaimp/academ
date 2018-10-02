@@ -1,4 +1,4 @@
-//import 2
+//import
 
 import java.util.Scanner;
 
@@ -11,7 +11,6 @@ public class PrintAndRead {
     private static int printAndRead(String text) {
         System.out.println(text);
         Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        return number;
+        return scanner.nextInt();
     }
 }

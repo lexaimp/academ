@@ -1,8 +1,8 @@
-//import 2
+//import
 
 import java.util.Scanner;
 
-public class DigitsNumber {
+public class DigitNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число: ");
@@ -12,8 +12,8 @@ public class DigitsNumber {
         int maxNumeral = 0;
 
         while (number != 0) {
-            sum += number % 10;
             int numeral = number % 10;
+            sum += number % 10;
             if (maxNumeral < numeral) {
                 maxNumeral = numeral;
             }

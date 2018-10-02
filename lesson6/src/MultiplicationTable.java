@@ -1,13 +1,17 @@
-//пока без форматирования
+//пока без форматирования import
 public class MultiplicationTable {
     public static void main(String[] args) {
-        int[] array = getArray(12);
+        int[] array = getArray(10);
 
         for (int i = 0; i < array[array.length - 1]; i++) {
             System.out.print(System.lineSeparator());
             for (int j = 0; j < array[array.length - 1]; j++) {
                 int composition = array[i] * array[j];
-                System.out.printf("%4d",composition);
+                if (i == 0) {                                  //попытка реализации форматированного вывода
+                    System.out.printf("|%3d", composition);
+                } else {
+                    System.out.printf("%4d", composition);
+                }
             }
         }
     }
