@@ -1,9 +1,4 @@
-/* todo
-1. Ошибки в проверке вещественных чисел
-2. Если a, b равны 0, там должно быть 2 случая в зависимости от c
-3. Надо везде через эпсилон
-4. Когда дискриминант 0, то надо упростить формулу +
- */
+//import
 
 import java.util.Scanner;
 
@@ -19,23 +14,28 @@ public class QuadraticEquation {
         double b = scanner.nextDouble();
         System.out.print("c = ");
         double c = scanner.nextDouble();
-        double x;
 
-        if (Math.abs(a - a) <= epsilon && Math.abs(b - b) <= epsilon) {
-            if (Math.abs(c - c) <= epsilon) {
-                System.out.println("Коэфиенты не могут быт равны нулю");
-            } else if ((c - c) > epsilon) {
-                System.out.println("Неверно заданы коэффициенты уравнения");
-            }
-        } else if (Math.abs(a - a) <= epsilon) {
-            x = -c / b;
+        if (Math.abs(a) <= epsilon) {
+            System.out.println("Коэфициент а не может быть равен 0");
+        } else if (Math.abs(b) <= epsilon && Math.abs(c) <= epsilon) {
+            double x = 0;
+            System.out.println("1 корень");
             System.out.println("x = " + x);
+        } else if (Math.abs(b) <= epsilon && -(c / a) > epsilon) {
+            double x1 = -Math.sqrt(-c / a);
+            System.out.println("x1 = " + x1);
+            double x2 = -Math.sqrt(-c / a);
+            System.out.println("x2 = " + x2);
+        } else if (Math.abs(c) <= epsilon) {
+            double x1 = 0;
+            System.out.println("x1 = " + x1);
+            double x2 = -(b / a);
+            System.out.println("x2 = " + x2);
         } else {
             double discriminant = Math.pow(b, 2) - 4 * a * c;
-            System.out.println(discriminant);
-            if (discriminant < 0) {
+            if (discriminant < epsilon) {
                 System.out.println("Корней нет");
-            } else if ((discriminant - discriminant) <= epsilon) {
+            } else if ((discriminant) <= epsilon) {
                 double x1 = -b / (2 * a);
                 System.out.println("1 корень");
                 System.out.println("x = " + x1);

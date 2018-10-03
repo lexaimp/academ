@@ -19,7 +19,7 @@ public class NextDate {
         if ((year % 4 != 0) || ((year % 100 == 0) && (year % 400 != 0))) {
             leapYear = false;
         }
-        boolean nextDay = (month <= 7 && month % 2 == 0 % && day == 30);
+        boolean nextDay = (month <= 7 && month % 2 == 0 && day == 30);
         boolean nextDateFebruary = (month == 2) && ((leapYear && day == 28) || (!leapYear && day == 29));
         boolean errorMax = (month % 2 == 0 && day > 30) || (day > 31) || (leapYear && day > 28) || (!leapYear && day > 29);
         boolean errorMin = (month > 12) || (day <= 0 || month <= 0 || year <= 0);
