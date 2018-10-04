@@ -1,4 +1,5 @@
-//import
+//1. Вместо print separator надо вызвать println() без аргументов
+//2. Надо сделать шапку таблицы
 public class MultiplicationTable {
     public static void main(String[] args) {
         int tableSize = 10;

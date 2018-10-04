@@ -1,4 +1,5 @@
-//import
+//1. Для 12 и 100 надо константы
+//2. Есть ошибка
 public class Contribution {
     public static void main(String[] args) {
         double countMoney = 200000;
