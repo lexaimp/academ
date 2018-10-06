@@ -1,3 +1,7 @@
+//1. warning в функции
+//2. Пусть в этой задаче будет без эпсилон
+//3. В этой задаче считаем что начало всегда меньше конца
+
 public class Range {
     private double from;
     private double to;
@@ -24,20 +28,11 @@ public class Range {
     }
 
     public double getLength() {
-        final double epsilon = 1.0e-10;
-        if ((from - to) > epsilon) {
-            return from - to;
-        } else {
-            return to - from;
-        }
+        return from - to;
     }
 
     public boolean isInside(double number) {
         final double epsilon = 1.0e-10;
-        if (number - from >= epsilon && to - number >= epsilon) {
-            return true;
-        } else {
-            return false;
-        }
+        return (number - from >= epsilon && to - number >= epsilon);
     }
 }
