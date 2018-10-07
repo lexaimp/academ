@@ -62,12 +62,12 @@ public class CountingSymbol {
         char d = 0;
         for (int i = 0; i < string.length(); i++) {
             char c = string.charAt(i);
-            if (Character.isUpperCase(c)){
+            if (Character.isUpperCase(c)) {
                 c = Character.toLowerCase(c);
             }
-            if (c == d){
+            if (c == d) {
                 count++;
-                if (maxCount <= count){
+                if (maxCount <= count) {
                     maxCount = count;
                 }
             } else {
