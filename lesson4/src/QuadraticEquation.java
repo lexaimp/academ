@@ -1,7 +1,7 @@
 //1. Есть лишние случаи
 //2. Когда a равен 0, надо рассматривать разные случаи
 //3. Есть ошибки в проверке вещественных чисел
-//4. Вокруг discriminant не нужны скобки
+//4. Вокруг discriminant не нужны скобки+
 
 import java.util.Scanner;
 
@@ -38,7 +38,7 @@ public class QuadraticEquation {
             double discriminant = Math.pow(b, 2) - 4 * a * c;
             if (discriminant < epsilon) {
                 System.out.println("Корней нет");
-            } else if ((discriminant) <= epsilon) {
+            } else if (discriminant <= epsilon) {
                 double x1 = -b / (2 * a);
                 System.out.println("1 корень");
                 System.out.println("x = " + x1);
