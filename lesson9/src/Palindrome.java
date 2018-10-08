@@ -1,40 +1,32 @@
-// 1. Надо без ООП
+// 1. Надо без ООП +
 //
-//2. Имя функции должно начинаться с глагола
+//2. Имя функции должно начинаться с глагола+
 //
-//3. Не нужно проверять на регистр, лучше сразу переводить
+//3. Не нужно проверять на регистр, лучше сразу переводить+
 //
-//4. Надо учитывать только буквы
+//4. Надо учитывать только буквы+
 //
 //5. Есть ошибка
 
 public class Palindrome {
-    private String string;
-
-    public Palindrome(String string) {
-        this.string = string;
+    public static void main(String[] args) {
+        String string = "А роза упала на лапу Азора";
+        System.out.println(isPalindrome(string));
+        string = "Аргентина манит негра";
     }
 
-    public void setString(String string) {
-        this.string = string;
-    }
-
-    public boolean palindrome() {
+    public static boolean isPalindrome(String string) {
         boolean palindrome = false;
         for (int i = 0, j = string.length() - 1; i < string.length() / 2; i++, j--) { // цикл до середины строки
             char c = string.charAt(i);
-            if (Character.isWhitespace(c)) {
+            c = Character.toLowerCase(c);
+            if (Character.isWhitespace(c) || !Character.isLetter(c)) {
                 c = string.charAt(++i);
             }
-            if (Character.isUpperCase(c)) {
-                c = Character.toLowerCase(c);
-            }
             char b = string.charAt(j);
-            if (Character.isWhitespace(b)) {
+            b = Character.toLowerCase(b);
+            if (Character.isWhitespace(b) || !Character.isLetter(b)) {
                 b = string.charAt(--j);
-            }
-            if (Character.isUpperCase(b)) {
-                b = Character.toLowerCase(b);
             }
             if (c == b) {
                 palindrome = true;
