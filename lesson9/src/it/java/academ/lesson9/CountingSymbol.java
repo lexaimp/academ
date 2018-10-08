@@ -2,17 +2,17 @@
 package it.java.academ.lesson9;
 
 public class CountingSymbol {
-    private String string;
-
-    public CountingSymbol(String string) {
-        this.string = string;
+    public static void main(String[] args) {
+        String string = "q6we4r t54#23 24ty+ ^^";
+        System.out.println("Количество букв: " + getCountLitters(string));
+        System.out.println("Количество цифр: " + getDigitsCount(string));
+        System.out.println("Количество пробелов: " + getSpaceCount(string));
+        System.out.println("Количество остальных символов: " + getOtherCount(string));
+        string = "dfeAaaAfessSSSssVVvvvv";
+        System.out.println("Максимальная длина подстроки, состоящая из одного и того же символа: " + getMaxLengthSubstring(string));
     }
 
-    public void setString(String string) {
-        this.string = string;
-    }
-
-    public int getCountLitters() {
+    public static int getCountLitters(String string) {
         int count = 0;
         for (int i = 0; i < string.length(); i++) {
             char c = string.charAt(i);
@@ -23,7 +23,7 @@ public class CountingSymbol {
         return count;
     }
 
-    public int getCountDigit() {
+    public static int getDigitsCount(String string) {
         int count = 0;
         for (int i = 0; i < string.length(); i++) {
             char c = string.charAt(i);
@@ -34,7 +34,7 @@ public class CountingSymbol {
         return count;
     }
 
-    public int getCountSpace() {
+    public static int getSpaceCount(String string) {
         int count = 0;
         for (int i = 0; i < string.length(); i++) {
             char c = string.charAt(i);
@@ -45,7 +45,7 @@ public class CountingSymbol {
         return count;
     }
 
-    public int getCountOther() {
+    public static int getOtherCount(String string) {
         int count = 0;
         for (int i = 0; i < string.length(); i++) {
             char c = string.charAt(i);
@@ -56,7 +56,7 @@ public class CountingSymbol {
         return count;
     }
 
-    public int getMaxSubstring() {
+    public static int getMaxLengthSubstring(String string) {
         int count = 1;
         int maxCount = 1;
         char d = 0;

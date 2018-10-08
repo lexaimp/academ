@@ -1,11 +1,17 @@
-//1. Вместо print separator надо вызвать println() без аргументов
-//2. Надо сделать шапку таблицы
+//import
 public class MultiplicationTable {
     public static void main(String[] args) {
-        int tableSize = 10;
+        int tableSize = 15;
 
         for (int i = 1; i <= tableSize; i++) {
-            System.out.print(System.lineSeparator());
+            if (i == 2) {
+                System.out.println();
+                String bottomDivider = "----";
+                for (int k = 1; k <= tableSize; k++) {
+                    System.out.print(bottomDivider);
+                }
+            }
+            System.out.println();
             for (int j = 1; j <= tableSize; j++) {
                 int composition = i * j;
                 if (i == 1) {                                  //попытка реализации форматированного вывода
