@@ -4,7 +4,7 @@ public class Palindrome {
     public static void main(String[] args) {
         String string = "А роза упала на лапу Азора";
         System.out.println(isPalindrome(string));
-        string = "Аргентина манит негра";
+        string = "Аргентина, манит негра";
         System.out.println(isPalindrome(string));
     }
 

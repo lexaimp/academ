@@ -19,22 +19,45 @@ public class NextDate {
         if ((year % 4 != 0) || ((year % 100 == 0) && (year % 400 != 0))) {
             leapYear = false;
         }
-        boolean nextDay = (month <= 7 && month % 2 == 0 && day == 30);
-        boolean nextDateFebruary = (month == 2) && ((leapYear && day == 28) || (!leapYear && day == 29));
-        boolean errorMax = (month % 2 == 0 && day > 30) || (day > 31) || (leapYear && day > 28) || (!leapYear && day > 29);
-        boolean errorMin = (month > 12) || (day <= 0 || month <= 0 || year <= 0);
-        if (errorMax || errorMin) {
-            System.out.println("Введена ошибочная дата");
-            return;
-        } else if (nextDateFebruary) {
-            day = 1;
-            month++;
-            if (month > 12) {
-                month = 1;
-                year++;
+        if (day > 0 && month > 0 && year > 0) {
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                    if (day == 31) {
+                        day = 1;
+                        month++;
+                    }
+                    break;
+                case 12:
+                    if (day == 31) {
+                        day = 1;
+                        month = 1;
+                        year++;
+                    }
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    if (day == 30) {
+                        day = 1;
+                        month++;
+                    }
+                    break;
+                case 2:
+                    if (leapYear && day == 29) {
+                        day = 1;
+                        month++;
+                    } else if (day == 28) {
+                        day = 1;
+                        month++;
+                    }
+                    break;
             }
-        } else {
-            day++;
         }
         System.out.println(day + "." + month + "." + year);
     }
