@@ -1,7 +1,9 @@
-//import
+//1. Нет левой части шапки
+//
+//2. Верхнюю часть шапки не стоит делать в общем цикле
 public class MultiplicationTable {
     public static void main(String[] args) {
-        int tableSize = 15;
+        int tableSize = 7;
 
         for (int i = 1; i <= tableSize; i++) {
             if (i == 2) {
