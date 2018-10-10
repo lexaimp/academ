@@ -8,8 +8,6 @@ public class CountingSymbol {
         System.out.println("Количество цифр: " + getDigitsCount(string));
         System.out.println("Количество пробелов: " + getSpaceCount(string));
         System.out.println("Количество остальных символов: " + getOtherCount(string));
-        string = "dfeAaaAfessSSSssVVvvvv";
-        System.out.println("Максимальная длина подстроки, состоящая из одного и того же символа: " + getMaxLengthSubstring(string));
     }
 
     public static int getLettersCount(String string) {
@@ -54,26 +52,5 @@ public class CountingSymbol {
             }
         }
         return count;
-    }
-//1. В строке может встречаться символ с кодом 0, тогда работать не будет.
-//В общем, надо считать что нет такого символа, который мы могли бы записать в d, надо придумать другой способ
-    public static int getMaxLengthSubstring(String string) {
-        int count = 1;
-        int maxCount = 1;
-        for (int i = 0, j = 0; i < string.length(); i++, j++) {
-            char c = string.charAt(i);
-            char d = string.charAt(j);
-                c = Character.toLowerCase(c);
-            if (c == d) {
-                count++;
-                if (maxCount <= count) {
-                    maxCount = count;
-                }
-            } else {
-                count = 1;
-            }
-            d = c;
-        }
-        return maxCount;
     }
 }
