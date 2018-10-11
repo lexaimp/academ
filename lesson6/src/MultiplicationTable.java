@@ -1,7 +1,7 @@
 //import
 public class MultiplicationTable {
     public static void main(String[] args) {
-        int tableSize = 13;
+        int tableSize = 7;
 
         for (int i = 1; i <= tableSize; i++) {
             System.out.printf("%3d%s", i, "|");

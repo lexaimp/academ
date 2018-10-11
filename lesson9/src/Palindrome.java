@@ -10,7 +10,7 @@
 
 public class Palindrome {
     public static void main(String[] args) {
-        String string = "";
+        String string = "   ";
         System.out.println(string.length());
         System.out.println(isPalindrome(string));
         string = "А роза упала на лапу Азора";
