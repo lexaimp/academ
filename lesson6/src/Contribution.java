@@ -11,7 +11,7 @@ public class Contribution {
 
     private static double getMoneyOnDeposit(double countMoney, int countOfMonth, double annualRate) {
         final double monthlyRate = annualRate / countOfMonth;
-        countMoney = countMoney * (1 + (annualRate * 30) / (100 * 365));// количество денег на счете после процентного повышения в месяц
+        countMoney = countMoney * (1 + (annualRate /* * 30*/) / (100/* * 365*/));// количество денег на счете после процентного повышения в месяц
         //количество денег на счете * (1 + (процентная ставка, количество дней в месяце,))
         /*for (int i = 0; i <= countOfMonth; i++) {
             final double monthlyPercentage = countMoney / 100 * monthlyRate;
