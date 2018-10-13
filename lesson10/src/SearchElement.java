@@ -1,7 +1,7 @@
-// todo разобраться с выводом нескольких индексов.
+// import
 public class SearchElement {
     public static void main(String[] args) {
-        double[] array = {23, 5, 1234, 12.6, 5, 854, 6};
+        double[] array = {23, 5, 1234, 12.6, 854, 6};
         System.out.println(getIndex(array, 5));
     }
 
