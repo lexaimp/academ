@@ -4,7 +4,7 @@ public class ArrayMultiplicationTable {
         int multiplicationTable[][] = getArrayMultiplicationTable(5);
 
         for (int i = 0; i < multiplicationTable.length; i++) {
-                System.out.println();
+            System.out.println();
             for (int j = 0; j < multiplicationTable.length; j++) {
                 System.out.printf("%4d", multiplicationTable[i][j]);
             }

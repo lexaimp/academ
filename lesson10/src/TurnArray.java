@@ -1,11 +1,12 @@
 //import
+
 import java.util.Arrays;
 
 public class TurnArray {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6};
         double[] array2 = {25.3, 78854.654, -847.214, 5746.6547864,};
-        String[] array3 = {"давайте","жить","дружно"};
+        String[] array3 = {"давайте", "жить", "дружно"};
         getTurnArray(array);
         getTurnArray(array2);
         getTurnArray(array3);

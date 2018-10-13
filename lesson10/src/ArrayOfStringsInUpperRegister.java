@@ -1,4 +1,5 @@
 //import
+
 import java.util.Arrays;
 
 public class ArrayOfStringsInUpperRegister {
