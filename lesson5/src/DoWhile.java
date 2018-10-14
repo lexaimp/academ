@@ -1,27 +1,26 @@
-//1. Неправильно сделано деление
-//2. k, j не информативные имена
-//3. Надо вывести не только числа, но и текст для пользователя
-//4. sum1, sum2 тоже не очень информативные имена
+//import2
 public class DoWhile {
     public static void main(String[] args) {
         int initialValue = 3;
         int finalValue = 6;
         int i = initialValue;
-        int j = 0;
-        int k = 0;
+        int count1 = 0;
+        int count2 = 0;
         int sum1 = 0;
         int sum2 = 0;
 
         do {
             if (i % 2 == 0) {
-                sum1 += i;
-                ++k;
+                sum2 += i;
+                ++count2;
             }
-            sum2 += i;
+            sum1 += i;
             ++i;
-            ++j;
+            ++count1;
         } while (i <= finalValue);
-        System.out.println(sum1 / k);
-        System.out.println(sum2 / j);
+        double average = (double) sum1 / count1;
+        double averageEvenNumber = (double) sum2 / count2;
+        System.out.println("Среднее арифметическое чисел = " + average);
+        System.out.println("Среднее арифметическое только четных чисел = " + averageEvenNumber);
     }
 }

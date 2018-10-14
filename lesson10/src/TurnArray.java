@@ -1,4 +1,4 @@
-//import
+//import2
 
 import java.util.Arrays;
 
@@ -18,9 +18,9 @@ public class TurnArray {
     private static void getTurnArray(int[] array) {
         int middleOfArray = array.length / 2;
         for (int i = 0; i < middleOfArray; i++) {
-            int a = array[i];
-            array[i] = array[array.length - 1 - i];
-            array[array.length - 1 - i] = a;
+            array[i] = array[array.length - 1 - i] - array[i];
+            array[array.length - 1 - i] -= array[i];
+            array[i] += array[array.length - 1 - i];
         }
     }
 
