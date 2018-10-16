@@ -1,18 +1,18 @@
-//import
+// import
 public class ArrayMultiplicationTable {
     public static void main(String[] args) {
-        int multiplicationTable[][] = getArrayMultiplicationTable(5);
+        int[][] multiplicationTable = getArrayMultiplicationTable(6);
 
-        for (int i = 0; i < multiplicationTable.length; i++) {
+        for (int[] e: multiplicationTable) {
             System.out.println();
-            for (int j = 0; j < multiplicationTable.length; j++) {
-                System.out.printf("%4d", multiplicationTable[i][j]);
+            for (int k: e) {
+                System.out.printf("%4d", k);
             }
         }
     }
 
     private static int[][] getArrayMultiplicationTable(int size) {
-        int[][] array = new int[size][];
+        int[][] array = new int[size][size];
         for (int i = 0; i < array.length; i++) {
             array[i] = new int[size];
             for (int j = 0; j < array.length; j++) {

@@ -1,4 +1,4 @@
-//import2
+// 1. Простой случай лучше рассматривать первым
 public class Exponentiation {
     public static void main(String[] args) {
         System.out.println(getExponentiation(5, 3));

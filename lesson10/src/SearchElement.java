@@ -1,4 +1,4 @@
-// import
+// done
 public class SearchElement {
     public static void main(String[] args) {
         double[] array = {23, 5, 1234, 12.6, 854, 6};

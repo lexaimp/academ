@@ -1,4 +1,4 @@
-//import2
+//todo done?
 public class RecursionEuclid {
     public static void main(String[] args) {
         System.out.println(getEuclid(45, 165));

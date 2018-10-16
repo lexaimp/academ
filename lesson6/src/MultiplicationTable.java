@@ -1,22 +1,16 @@
-//import2
+// import 3
 public class MultiplicationTable {
     public static void main(String[] args) {
         int tableSize = 9;
 
-        for (int i = 0; i <= tableSize; i++) {
-            if (i == 0){
-                System.out.print("   |");
-                continue;
-            }
-            System.out.printf("%2d%s", i, " |");
+        System.out.print("   |");
+        for (int i = 1; i <= tableSize; i++) {
+            System.out.printf("%3d%s", i, "|");
         }
         System.out.println();
-        for (int i = 0; i <= tableSize; i++) {
-            if (i == 0) {
-                System.out.print("---|");
-            } else {
-                System.out.print("----");
-            }
+        System.out.print("---|");
+        for (int i = 1; i <= tableSize; i++) {
+            System.out.print("----");
         }
         for (int i = 1; i <= tableSize; i++) {
             System.out.println();
@@ -25,7 +19,7 @@ public class MultiplicationTable {
                 if (j == 1) {
                     System.out.printf("%2d%s", composition, " |");
                 }
-                    System.out.printf("%3d%s", composition, " ");
+                System.out.printf("%3d%s", composition, " ");
             }
         }
     }

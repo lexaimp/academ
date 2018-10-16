@@ -7,11 +7,13 @@ public class AverageOfArray {
 
     private static double getAverageEvenNumberOfArray(int[] array) {
         int sum = 0;
+        int count = 0;
         for (int e : array) {
             if (e % 2 == 0) {
                 sum += e;
+                count++;
             }
         }
-        return (double) sum / array.length;
+        return (double) sum / count;
     }
 }
