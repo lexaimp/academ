@@ -1,4 +1,4 @@
-// import 3
+// import
 
 import java.util.Scanner;
 
@@ -15,14 +15,14 @@ public class NextDate {
         int year = scanner.nextInt();
 
 //      Проверка явлется ли год високосным
-        boolean leapYear = true;
+        boolean isLeapYear = true;
         if ((year % 4 != 0) || ((year % 100 == 0) && (year % 400 != 0))) {
-            leapYear = false;
+            isLeapYear = false;
         }
-        boolean err = false;
+        boolean error = false;
 
         if (day <= 0 || month <= 0 || month > 12 || year <= 0) {
-            err = true;
+            error = true;
         }
         switch (month) {
             case 1:
@@ -35,7 +35,7 @@ public class NextDate {
                     day = 1;
                     month++;
                 } else if (day > 31) {
-                    err = true;
+                    error = true;
                 } else {
                     day++;
                 }
@@ -46,7 +46,7 @@ public class NextDate {
                     month = 1;
                     year++;
                 } else if (day > 31) {
-                    err = true;
+                    error = true;
                 } else {
                     day++;
                 }
@@ -59,26 +59,26 @@ public class NextDate {
                     day = 1;
                     month++;
                 } else if (day > 30) {
-                    err = true;
+                    error = true;
                 } else {
                     day++;
                 }
                 break;
             case 2:
-                if (leapYear && day == 29) {
+                if (isLeapYear && day == 29) {
                     day = 1;
                     month++;
-                } else if (!leapYear && day == 28) {
+                } else if (!isLeapYear && day == 28) {
                     day = 1;
                     month++;
                 } else if (day > 28) {
-                    err = true;
+                    error = true;
                 } else {
                     day++;
                 }
                 break;
         }
-        if (err) {
+        if (error) {
             System.out.println("Введена ошибочная дата!");
         } else {
             System.out.println(day + "." + month + "." + year);

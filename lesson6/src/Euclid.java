@@ -1,27 +1,21 @@
-//Евклид - сейчас неверно
-
-import java.util.Scanner;
+// import
 
 public class Euclid {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        System.out.println(getEuclid(45, 165));
+    }
 
-        System.out.print("a = ");
-        int a = scanner.nextInt();
-        System.out.print("b = ");
-        int b = scanner.nextInt();
-
+    private static int getEuclid(int a, int b) {
         if (b != 0) {
-            while (a % b != 0){
+            while (a % b != 0) {
                 int temp = a;
                 a = b;
                 b = temp % b;
             }
-            System.out.println("НОД = " + b);
-        } else if (a != 0){
-            System.out.println("НОД = " + a);
-        } else {
-            System.out.println("НОД не найден!");
+            return b;
+        } else if (a != 0) {
+            return a;
         }
+        return 0;
     }
 }

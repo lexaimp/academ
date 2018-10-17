@@ -1,4 +1,4 @@
-// import
+// done
 public class MaxNumber {
     public static void main(String[] args) {
         double[] array = {-15, -153, -3, 0.213412};

@@ -1,4 +1,4 @@
-// import
+// done
 public class AverageOfArray {
     public static void main(String[] args) {
         int[] array = {8, 2, 6, 1, 9, 16};
