@@ -1,16 +1,8 @@
-//1. Переменная palindrome не нужна, можно сразу делать return +
-//
-//2. Плохо использовать ++ как выражение +
-//
-//3. Неверное условие цикла
-//
-//4. Переводить в регистр лучше уже потом, когда понятно что это буквы
-//
-//5. Упадет на строке из нескольких пробелов
+//import
 
 public class Palindrome {
     public static void main(String[] args) {
-        String string = "   243=";
+        String string = "";
         System.out.println(isPalindrome(string));
         string = "А роза упала на лапу Азора";
         System.out.println(isPalindrome(string));
@@ -24,6 +16,7 @@ public class Palindrome {
         }
         int left = 0;
         int right = string.length() - 1;
+        int count = 0;
         while (left < right) {
             while (!Character.isLetter(string.charAt(left)) && left < right) {
                 left++;
@@ -39,10 +32,11 @@ public class Palindrome {
                 if (leftElement != rightElement) {
                     return false;
                 }
+                count++;
                 left++;
                 right--;
             }
         }
-        return true;
+        return count > 0;
     }
 }
