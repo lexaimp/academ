@@ -1,8 +1,8 @@
-//import
+//import wait
 
 public class Palindrome {
     public static void main(String[] args) {
-        String string = "";
+        String string = "  ";
         System.out.println(isPalindrome(string));
         string = "А роза упала на лапу Азора";
         System.out.println(isPalindrome(string));

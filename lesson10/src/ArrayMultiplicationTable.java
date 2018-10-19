@@ -4,10 +4,10 @@ public class ArrayMultiplicationTable {
         int[][] multiplicationTable = getArrayMultiplicationTable(6);
 
         for (int[] e : multiplicationTable) {
-            System.out.println();
             for (int k : e) {
                 System.out.printf("%4d", k);
             }
+            System.out.println();
         }
     }
 

@@ -2,7 +2,7 @@
 public class RecursionEuclid {
     public static void main(String[] args) {
         System.out.println(getEuclid(45, 165));
-        System.out.println(getRecursionEuclid(45, 165));
+        System.out.println(getRecursionEuclid(165, 45));
     }
 
     private static int getEuclid(int a, int b) {

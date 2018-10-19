@@ -8,10 +8,10 @@ public class Contribution {
         System.out.println("Прибыль: " + profit);
     }
 
-    private static double getMoneyOnDeposit(double countMoney, final double countOfMonth, final double annualRate) {
+    private static double getMoneyOnDeposit(double countMoney, double monthsCount, double annualRate) {
         final int percent = 100;
-        for (int i = 0; i < countOfMonth; i++) {
-            countMoney = countMoney * (1 + (annualRate) / (percent * countOfMonth));
+        for (int i = 0; i < monthsCount; i++) {
+            countMoney = countMoney * (1 + annualRate / (percent * monthsCount));
         }
         return countMoney;
     }

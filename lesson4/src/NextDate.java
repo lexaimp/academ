@@ -1,4 +1,4 @@
-// import
+// import wait
 
 import java.util.Scanner;
 
