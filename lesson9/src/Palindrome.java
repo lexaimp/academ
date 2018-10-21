@@ -1,4 +1,4 @@
-//import wait
+//import
 
 public class Palindrome {
     public static void main(String[] args) {
@@ -16,7 +16,6 @@ public class Palindrome {
         }
         int left = 0;
         int right = string.length() - 1;
-        int count = 0;
         while (left < right) {
             while (!Character.isLetter(string.charAt(left)) && left < right) {
                 left++;
@@ -32,11 +31,10 @@ public class Palindrome {
                 if (leftElement != rightElement) {
                     return false;
                 }
-                count++;
                 left++;
                 right--;
             }
         }
-        return count > 0;
+        return true;
     }
 }
