@@ -1,8 +1,9 @@
-//import
+//1. Пусть строка без букв считается палиндромом
+//п.1 не везде исправлен
 
 public class Palindrome {
     public static void main(String[] args) {
-        String string = "  ";
+        String string = "";
         System.out.println(isPalindrome(string));
         string = "А роза упала на лапу Азора";
         System.out.println(isPalindrome(string));
@@ -11,7 +12,7 @@ public class Palindrome {
     }
 
     private static boolean isPalindrome(String string) {
-        if (string.length() <= 1) {
+        if (string.length() == 0) { //?
             return false;
         }
         int left = 0;
