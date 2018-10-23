@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae8d7143-990c-488a-aced-22b5d46e6e3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson12/src/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson12/src/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/src/QuickSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,12 +69,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="507" />
+          <entry key="java" value="529" />
+          <entry key="txt" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="507" />
+          <entry key="JAVA" value="529" />
+          <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -113,8 +115,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lesson12/src/QuickSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="119">
+              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -221,17 +223,6 @@
               <item name="academ" type="b2602c69:ProjectViewProjectNode" />
               <item name="academ" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="academ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="academ" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson12" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="academ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="academ" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson12" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -241,7 +232,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540271532369" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540272758732" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="D:/It-academ/Lektsia_10_Rekursia_Binarny_Poisk.pdf" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -619,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540128818702</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="23.10.18 work">
+      <created>1540271769468</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1540271769468</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -692,7 +690,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Что успел то и сделал" />
     <MESSAGE value="Что успел то и сделал 2" />
     <MESSAGE value="lesson7 import" />
     <MESSAGE value="Исправления от 01.10.18" />
@@ -717,19 +714,8 @@
     <MESSAGE value="19.10.18 home" />
     <MESSAGE value="21.10.18 home" />
     <MESSAGE value="21.10.18 home 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="21.10.18 home 2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lesson12/src/QuickSort.java</url>
-          <line>13</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="23.10.18 work" />
+    <option name="LAST_COMMIT_MESSAGE" value="23.10.18 work" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1055,8 +1041,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson12/src/QuickSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="119">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
         </state>
       </provider>
     </entry>
