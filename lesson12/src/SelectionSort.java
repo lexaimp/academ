@@ -1,33 +1,15 @@
-// import
+//Выбором:
+//1. Сейчас не тот алгоритм
+//2. Вариант с рекурсией не нужен
 
 import java.util.Arrays;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] array = {5, 35, 1, 6, 97, 103, 17, 634, 42, 9};
-        System.out.println(Arrays.toString(array));
-        selectionSortRecursion(array, 0);
-        System.out.println(Arrays.toString(array));
-
         int[] array2 = {45, 84, 58, 7, 357, 1, 68, 1846, 1, 97};
         System.out.println(Arrays.toString(array2));
         selectionSort(array2);
         System.out.println(Arrays.toString(array2));
-    }
-
-    private static void selectionSortRecursion(int[] array, int start) {
-        if (start == array.length - 1) {
-            return;
-        }
-        for (int i = start; i < array.length - 1; i++) {
-            if (array[start] > array[i + 1]) {
-                int temp = array[start];
-                array[start] = array[i + 1];
-                array[i + 1] = temp;
-            }
-        }
-        start++;
-        selectionSortRecursion(array, start);
     }
 
     private static void selectionSort(int[] array) {
