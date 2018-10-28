@@ -1,3 +1,5 @@
+//import
+
 import java.util.Arrays;
 
 public class HeapSort {
@@ -9,41 +11,36 @@ public class HeapSort {
         System.out.println(Arrays.toString(array));
     }
 
-    private static void heapCreate(int[] array, int n) {
-        int child1 = 2 * n + 1;
-        int child2 = 2 * n + 2;
-        int parent = n;
+    private static void heapCreate(int[] array, int length, int i) {
+        int child1 = 2 * i + 1;
+        int child2 = 2 * i + 2;
+        int parent = i;
 
-        if (child1 <= array.length - 1 && array[child1] > array[parent]) {
+        if (child1 < length && array[child1] > array[parent]) {
             parent = child1;
         }
-        if (child2 <= array.length - 1 && array[child2] > array[parent]) {
+        if (child2 < length && array[child2] > array[parent]) {
             parent = child2;
         }
-        if (parent != n) {
-            int temp = array[n];
-            array[n] = array[parent];
+        if (parent != i) {
+            int temp = array[i];
+            array[i] = array[parent];
             array[parent] = temp;
-            heapCreate(array, parent);
-        }
-    }
-
-    private static void buildHeap(int[] array) {
-        int n = array.length;
-        for (int i = n / 2 - 1; i >= 0; i--) {
-            heapCreate(array, i);
+            heapCreate(array, length, parent);
         }
     }
 
     private static void heapSort(int[] array) {
-        buildHeap(array);
-        int n = array.length - 1;
-        for (int i = n; i >= 0; i--) {
+        int n = array.length;
+
+        for (int i = n / 2 - 1; i >= 0; i--) {
+            heapCreate(array, n, i);
+        }
+        for (int i = n - 1; i >= 0; i--) {
             int temp = array[0];
             array[0] = array[i];
             array[i] = temp;
-            n--;
-            heapCreate(array, 0);
+            heapCreate(array, i, 0);
         }
     }
 }

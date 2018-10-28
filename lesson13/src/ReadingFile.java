@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ReadingFile {
     public static void main(String[] args) throws FileNotFoundException {
-        try (Scanner scanner = new Scanner(new FileInputStream("input"))) {
+        try (Scanner scanner = new Scanner(new FileInputStream("input.txt"), "windows-1251")) {
 
             int count = scanner.nextInt();
             double[] a = new double[count];

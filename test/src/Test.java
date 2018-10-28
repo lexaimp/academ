@@ -1,49 +1,53 @@
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Test {
+
     public static void main(String[] args) {
-        int[] array = {10, 2, 3, 6, 8, 7, 1, 12};
-        System.out.println(Arrays.toString(array));
+        Scanner scanner = new Scanner(System.in);
 
-        heapSort(array);
-        System.out.println(Arrays.toString(array));
-    }
+        System.out.print("Введите число a: ");
+        double a = scanner.nextDouble();
 
-    private static void heapCreate(int[] array, int n) {
-        int child1 = 2 * n + 1;
-        int child2 = 2 * n + 2;
-        int parent = n;
+        System.out.print("Введите число b: ");
+        double b = scanner.nextDouble();
 
-        if (child1 <= array.length - 1 && array[child1] > array[parent]) {
-            parent = child1;
-        }
-        if (child2 <= array.length - 1 && array[child2] > array[parent]) {
-            parent = child2;
-        }
-        if (parent != n) {
-            int temp = array[n];
-            array[n] = array[parent];
-            array[parent] = temp;
-            heapCreate(array, parent);
-        }
-    }
+        System.out.print("Введите число c: ");
+        double c = scanner.nextDouble();
 
-    private static void buildHeap(int[] array) {
-        int n = array.length;
-        for (int i = n / 2 - 1; i >= 0; i--) {
-            heapCreate(array, i);
-        }
-    }
+        double epsilon = 1.0e-10;
+        double discriminant = Math.pow(b, 2) - 4 * a * c;
 
-    private static void heapSort(int[] array) {
-        buildHeap(array);
-        int n = array.length - 1;
-        for (int i = n; i >= 0; i--) {
-            int temp = array[0];
-            array[0] = array[i];
-            array[i] = temp;
-            n--;
-            heapCreate(array, 0);
+        if (Math.abs(a) <= epsilon && Math.abs(b) <= epsilon) {
+            System.out.println(a + "x² + " + b + "x + " + c + " = 0");
+
+            if (Math.abs(c) <= epsilon) {
+                System.out.println("x - любое число, т.к. x умножить на 0, он будет равен 0");
+            } else {
+                System.out.println("кореней нет");
+            }
+        } else if (Math.abs(a) <= epsilon) {
+            System.out.println("Уравнение не является квадратным");
+            System.out.println(b + "x + " + c + " = 0");
+
+            double x = -(c / b);
+            System.out.println("x = " + x);
+        } else {
+            System.out.println(a + "x² + " + b + "x + " + c + " = 0");
+            System.out.println("Дискриминант равен " + discriminant);
+
+            if (discriminant < -epsilon) {
+                System.out.println("Корней нет, т.к. дискриминант отрицательный");
+            } else if (Math.abs(discriminant) <= epsilon) {
+                double x = -b / (2 * a);
+                System.out.println("Корень один, т.к. дискриминант равен нулю, x = " + x);
+            } else {
+                double rootDiscriminant = Math.sqrt(discriminant);
+                double x1 = (-b - rootDiscriminant) / (2 * a);
+                double x2 = (-b + rootDiscriminant) / (2 * a);
+                System.out.println("x1 = " + x1);
+                System.out.println("x2 = " + x2);
+
+            }
         }
     }
 }
