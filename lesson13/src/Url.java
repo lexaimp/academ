@@ -9,6 +9,7 @@ public class Url {
     private static String serverName(String url) {
         int index1 = url.indexOf("://");
         int index2 = url.indexOf("/", index1 + 3);
+
         if (index2 == -1) {
             index2 = url.length();
         }
