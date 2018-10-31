@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ae8d7143-990c-488a-aced-22b5d46e6e3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson12/src/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/src/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson13/src/CountEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13/src/CountEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson13/src/StringFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13/src/StringFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson4/src/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/src/QuadraticEquation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson6/src/Euclid.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6/src/Euclid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,14 +48,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="33622" />
-          <entry key="txt" value="1397" />
+          <entry key="java" value="33726" />
+          <entry key="txt" value="1399" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="33622" />
-          <entry key="PLAIN_TEXT" value="1397" />
+          <entry key="JAVA" value="33726" />
+          <entry key="PLAIN_TEXT" value="1399" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -128,7 +123,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lesson12/src/HeapSort.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
+                <state relative-caret-position="560">
                   <caret line="35" column="23" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="23" />
                 </state>
               </provider>
@@ -150,8 +145,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/src/Test.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="147">
-                  <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+                <state relative-caret-position="528">
+                  <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -712,7 +707,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540916867993</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="31.10.18 home">
+      <created>1541003599178</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1541003599178</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -737,8 +739,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.3145946" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3762162" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.3145946" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3762162" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
@@ -790,7 +792,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Дорешал и отправил квадратыне уравнения, исправил 2 задачи" />
     <MESSAGE value="ООП Начало" />
     <MESSAGE value="Добавил в задачки что нужно изправить от Павла" />
     <MESSAGE value="07.10.18" />
@@ -815,7 +816,8 @@
     <MESSAGE value="29.10.18 home" />
     <MESSAGE value="29.10.18 home+" />
     <MESSAGE value="30.10.18 home" />
-    <option name="LAST_COMMIT_MESSAGE" value="30.10.18 home" />
+    <MESSAGE value="31.10.18 home" />
+    <option name="LAST_COMMIT_MESSAGE" value="31.10.18 home" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1186,15 +1188,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson12/src/HeapSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="560">
           <caret line="35" column="23" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="528">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -6,7 +6,7 @@ public class Test {
     public static void main(String[] args) {
         int[] array = {10, 2, 3, 6, 8, 7, 1, 12};
         System.out.println(Arrays.toString(array));
-        builHeap(array);
+        buildHeap(array);
         System.out.println(Arrays.toString(array));
     }
 
@@ -29,7 +29,7 @@ public class Test {
         }
     }
 
-    private static void builHeap (int[] array){
+    private static void buildHeap(int[] array){
         for (int i = array.length / 2 - 1; i >=0; i--){
             heapIfy(array, i);
         }
