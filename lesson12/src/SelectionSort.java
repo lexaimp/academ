@@ -1,4 +1,4 @@
-// import
+// import2
 
 import java.util.Arrays;
 
@@ -13,14 +13,12 @@ public class SelectionSort {
 
     private static void selectionSort(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {
-            int min = i;
             for (int j = i + 1; j < array.length; j++) {
-                if (array[min] > array[j]) {
-                    min = j;
+                if (array[i] > array[j]) {
+                    int temp = array[j];
+                    array[j] = array[i];
+                    array[i] = temp;
                 }
-                int temp = array[min];
-                array[min] = array[i];
-                array[i] = temp;
             }
         }
     }

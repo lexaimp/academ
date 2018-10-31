@@ -1,21 +1,18 @@
-// import
+// import2
 
 public class Euclid {
     public static void main(String[] args) {
-        System.out.println(getEuclid(45, 165));
+        System.out.println(getMinCommonDivider(45, 165));
     }
 
-    private static int getEuclid(int a, int b) {
-        if (b != 0) {
-            while (a % b != 0) {
-                int temp = a;
-                a = b;
-                b = temp % b;
+    private static int getMinCommonDivider(int a, int b) {
+        while (a != 0 && b != 0) {
+            if (a > b) {
+                a = a % b;
+            } else {
+                b = b % a;
             }
-            return b;
-        } else if (a != 0) {
-            return a;
         }
-        return 0;
+        return a + b;
     }
 }
