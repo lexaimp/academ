@@ -21,11 +21,11 @@ public class Test {
         if (child2 < array.length && array[child2] > array[parent]) {
             parent = child2;
         }
-        if (parent != i) {
+        while (parent != i) {
             int temp = array[i];
             array[i] = array[parent];
             array[parent] = temp;
-            heapIfy(array, parent);
+            i = parent;
         }
     }
 
