@@ -1,8 +1,8 @@
-//import
+//import 2
 
 public class Url {
     public static void main(String[] args) {
-        String url = new String("https://vk.com/it.school.sep2018");
+        String url = ("https://vk.com/it.school.sep2018");
         System.out.println(serverName(url));
     }
 

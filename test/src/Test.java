@@ -4,34 +4,40 @@ import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
-        int[] array = {10, 2, 3, 6, 8, 7, 1, 12};
-        System.out.println(Arrays.toString(array));
-        buildHeap(array);
-        System.out.println(Arrays.toString(array));
+
+        int[] array = {1, 10, 25, 7, 8, 17, 5, 14};
+        for (int anArray : array) System.out.printf("%d ", anArray);
+
+        for (int i = (array.length / 2) - 1; i >= 0; i--)
+            siftDown(array, i, array.length - 1);
+        System.out.println();
+        for (int anArray : array) System.out.printf("%d ", anArray);
+
+        for (int i = array.length - 1; i >= 1; i--) {
+            int temp = array[0];
+            array[0] = array[i];
+            array[i] = temp;
+            siftDown(array, 0, i - 1);
+        }
+        System.out.println();
+        for (int anArray : array) System.out.printf("%d ", anArray);
     }
 
-    private static void heapIfy(int[] array, int i) {
-        int child1 = 2 * i + 1;
-        int child2 = 2 * i + 2;
-        int parent = i;
-
-        if (child1 < array.length && array[child1] > array[parent]) {
-            parent = child1;
-        }
-        if (child2 < array.length && array[child2] > array[parent]) {
-            parent = child2;
-        }
-        while (parent != i) {
-            int temp = array[i];
-            array[i] = array[parent];
-            array[parent] = temp;
-            i = parent;
-        }
-    }
-
-    private static void buildHeap(int[] array){
-        for (int i = array.length / 2 - 1; i >=0; i--){
-            heapIfy(array, i);
+    private static void siftDown(int[] numbers, int root, int bottom) {
+        int maxChild;
+        while ((root * 2 <= bottom)) {
+            if (root * 2 == bottom)
+                maxChild = root * 2;
+            else if (numbers[root * 2] > numbers[root * 2 + 1])
+                maxChild = root * 2;
+            else
+                maxChild = root * 2 + 1;
+            if (numbers[root] < numbers[maxChild]) {
+                int temp = numbers[root];
+                numbers[root] = numbers[maxChild];
+                numbers[maxChild] = temp;
+                root = maxChild;
+            } else break;
         }
     }
 }

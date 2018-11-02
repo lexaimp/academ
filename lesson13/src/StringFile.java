@@ -9,12 +9,12 @@ public class StringFile {
             int count = 0;
 
             while (scanner.hasNextLine()) {
-                    s[count] = scanner.nextLine();
-                    count++;
-                    }
-                    for (String e : s) {
-                    System.out.println(e);
-                    }
-                    }
-                    }
-                    }
+                s[count] = scanner.nextLine();
+                count++;
+            }
+            for (String e : s) {
+                System.out.println(e);
+            }
+        }
+    }
+}
