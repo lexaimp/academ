@@ -1,8 +1,7 @@
-// import2
-
+//import 2
 import java.util.Arrays;
 
-public class HeapSort {
+public class test2 {
     public static void main(String[] args) {
         int[] array = {10, 2, 3, 6, 8, 7, 1, 12};
         System.out.println(Arrays.toString(array));
