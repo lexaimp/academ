@@ -1,4 +1,4 @@
-//import
+//done
 
 import java.util.Arrays;
 
@@ -7,11 +7,11 @@ public class HeapSort {
         int[] array = {10, 2, 3, 6, 8, 7, 1, 12};
         System.out.println(Arrays.toString(array));
 
-        heapSort(array);
+        sortHeap(array);
         System.out.println(Arrays.toString(array));
     }
 
-    private static void heapCreate(int[] array, int length, int i) {
+    private static void createHeap(int[] array, int length, int i) {
         int child1 = 2 * i + 1;
         int child2 = 2 * i + 2;
         int parent = i;
@@ -26,21 +26,21 @@ public class HeapSort {
             int temp = array[i];
             array[i] = array[parent];
             array[parent] = temp;
-            heapCreate(array, length, parent);
+            createHeap(array, length, parent);
         }
     }
 
-    private static void heapSort(int[] array) {
+    private static void sortHeap(int[] array) {
         int n = array.length;
 
         for (int i = n / 2 - 1; i >= 0; i--) {
-            heapCreate(array, n, i);
+            createHeap(array, n, i);
         }
         for (int i = n - 1; i >= 0; i--) {
             int temp = array[0];
             array[0] = array[i];
             array[i] = temp;
-            heapCreate(array, i, 0);
+            createHeap(array, i, 0);
         }
     }
 }

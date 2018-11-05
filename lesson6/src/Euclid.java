@@ -1,18 +1,26 @@
-// import2
+// 1. Не тот алгоритм.
+//Там должно быть неважно какое число больше
+
+//1. Простые случаи надо рассматривать первыми.
+//А общий в конце
+//2. Имя метода неверное логически
 
 public class Euclid {
     public static void main(String[] args) {
-        System.out.println(getMinCommonDivider(45, 165));
+        System.out.println(getEuclid(45, 165));
     }
 
-    private static int getMinCommonDivider(int a, int b) {
-        while (a != 0 && b != 0) {
-            if (a > b) {
-                a = a % b;
-            } else {
-                b = b % a;
+    private static int getEuclid(int a, int b) {
+        if (b != 0) {
+            while (a % b != 0) {
+                int temp = a;
+                a = b;
+                b = temp % b;
             }
+            return b;
+        } else if (a != 0) {
+            return a;
         }
-        return a + b;
+        return 0;
     }
 }

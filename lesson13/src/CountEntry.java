@@ -1,4 +1,4 @@
-//import 2
+// import 3
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,19 +9,20 @@ public class CountEntry {
         try (Scanner scanner = new Scanner(new FileInputStream("input.txt"))) {
             int count = 0;
             while (scanner.hasNext()) {
-                count += countOfEntry(scanner.nextLine(), "of");
+                count += getCountOfEntry(scanner.nextLine(), "OF");
             }
             System.out.println(count);
         }
     }
 
-    private static int countOfEntry(String string, String substring) {
+    private static int getCountOfEntry(String string, String substring) {
         String s = string.toLowerCase();
-        int i = s.indexOf(substring.toLowerCase());
+        String sub = substring.toLowerCase();
+        int i = s.indexOf(sub);
         int count = 0;
 
         while (i != -1) {
-            i = s.indexOf(substring, i + substring.length());
+            i = s.indexOf(sub, i + sub.length());
             count++;
         }
         return count;
