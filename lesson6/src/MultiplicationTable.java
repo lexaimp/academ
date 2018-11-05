@@ -1,7 +1,7 @@
 // done
 public class MultiplicationTable {
     public static void main(String[] args) {
-        int tableSize = 9;
+        int tableSize = 15;
 
         System.out.print("   |");
         for (int i = 1; i <= tableSize; i++) {
