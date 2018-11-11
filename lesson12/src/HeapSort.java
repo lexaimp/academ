@@ -11,22 +11,27 @@ public class HeapSort {
         System.out.println(Arrays.toString(array));
     }
 
-    private static void createHeap(int[] array, int length, int i) {
-        int child1 = 2 * i + 1;
-        int child2 = 2 * i + 2;
-        int parent = i;
+    private static void createHeap(int[] array, int length, int parent) {
+        int maxChild;
+        while (2 * parent + 1 <= length - 1) {
+            int child1 = 2 * parent + 1;
+            int child2 = 2 * parent + 2;
 
-        if (child1 < length && array[child1] > array[parent]) {
-            parent = child1;
-        }
-        if (child2 < length && array[child2] > array[parent]) {
-            parent = child2;
-        }
-        if (parent != i) {
-            int temp = array[i];
-            array[i] = array[parent];
-            array[parent] = temp;
-            createHeap(array, length, parent);
+            if (child1 == length - 1) {
+                maxChild = child1;
+            } else if (array[child1] > array[child2]) {
+                maxChild = child1;
+            } else {
+                maxChild = child2;
+            }
+            if (array[parent] < array[maxChild]) {
+                int temp = array[parent];
+                array[parent] = array[maxChild];
+                array[maxChild] = temp;
+                parent = maxChild;
+            } else {
+                break;
+            }
         }
     }
 
