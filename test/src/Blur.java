@@ -55,20 +55,19 @@ public class Blur {
                     for (int n = i - 1; n <= i + 1; ++n) {
                         rasterCopy.getPixel(n, m, pixel);
 
-                        r += matrixBlur[index1][index2] * pixel[0];
-                        g += matrixBlur[index1][index2] * pixel[1];
-                        b += matrixBlur[index1][index2] * pixel[2];
-
+                        r += matrixBlur[index1][index2] * pixel[0] > 0 ? matrixBlur[index1][index2] * pixel[0] : 0;
+                        r += matrixBlur[index1][index2] * pixel[0] < 255 ? matrixBlur[index1][index2] * pixel[0] : 255;
+                        g += matrixBlur[index1][index2] * pixel[1] > 0 ? matrixBlur[index1][index2] * pixel[1] : 0;
+                        g += matrixBlur[index1][index2] * pixel[1] < 255 ? matrixBlur[index1][index2] * pixel[1] : 255;
+                        b += matrixBlur[index1][index2] * pixel[2] > 0 ? matrixBlur[index1][index2] * pixel[2] : 0;
+                        b += matrixBlur[index1][index2] * pixel[2] < 255 ? matrixBlur[index1][index2] * pixel[2] : 255;
                         index2++;
                     }
                     index1++;
                 }
-                pixel[0] = r > 0 ? (int)r : 0;
-                pixel[0] = r < 255 ? (int)r : 255;
-                pixel[1] = g > 0 ? (int)g : 0;
-                pixel[1] = g < 255 ? (int)g : 255;
-                pixel[2] = b > 0 ? (int)b : 0;
-                pixel[2] = b < 255 ? (int)b : 255;
+                pixel[0] = (int) r;
+                pixel[1] = (int) g;
+                pixel[2] = (int) b;
 
                 raster.setPixel(i, j, pixel);
             }
