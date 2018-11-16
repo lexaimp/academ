@@ -1,8 +1,4 @@
-// 1. Лучше не читать файл 2 раза, а второй image создать через конструктор
-//
-//2. Матрица не обязательно 3 на 3, может быть и 5 на 5, например
-//
-//3. Числа в матрице могут быть любыми, поэтому может происходить выход за 0..255
+// import
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -15,10 +11,7 @@ public class Blur {
     public static void main(String[] args) throws IOException {
         // читаем картинку из файлу image.jpg в объект класса BufferedImage
         BufferedImage image = ImageIO.read(new File("image.jpg"));
-        BufferedImage imageCopy = ImageIO.read(new File("image.jpg"));
-
         WritableRaster raster = image.getRaster();
-        WritableRaster rasterCopy = imageCopy.getRaster();
 
         // получаем ширину и высоту картинки
         int width = raster.getWidth();
@@ -28,6 +21,8 @@ public class Blur {
         int matrixWidth = 3;
         int matrixHeight = 3;
 
+        BufferedImage imageCopy = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        WritableRaster rasterCopy = imageCopy.getRaster();
         // создаем массив, в котором будет содержаться текущий пиксель
         int[] pixel = new int[COLORS_COUNT_IN_RGB];
         // создание матрицы для хранения необходимого эффекта
@@ -43,7 +38,7 @@ public class Blur {
             // цикл пикселям строки
             for (int i = 1; i < width - 1; ++i) {
                 // получаем текущий пиксель с координатами i,j
-                raster.getPixel(i, j, pixel);
+                rasterCopy.getPixel(i, j, pixel);
 
                 double r = 0;
                 double g = 0;
@@ -53,7 +48,7 @@ public class Blur {
                 for (int m = j - 1; m <= j + 1; ++m) {
                     int index2 = 0;
                     for (int n = i - 1; n <= i + 1; ++n) {
-                        rasterCopy.getPixel(n, m, pixel);
+                        raster.getPixel(n, m, pixel);
 
                         r += matrixBlur[index1][index2] * pixel[0];
                         if (r < 0) {

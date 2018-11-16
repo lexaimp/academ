@@ -1,12 +1,24 @@
 //Пирамидальная сортировка - надо без рекурсии
 
-import java.util.Arrays;
+
 
 public class Test {
     public static void main(String[] args) {
-        int[][] matrix = new int[3][3];
-        matrix[2][2] = 1;
-        System.out.println(matrix[2][2]);
-        System.out.println(matrix.length);
+        int a = 45;
+        int b = 165;
+
+        int greatestCommonDivisor = 0;
+        int max = a > b ? a : b;
+        int min = a < b ? a : b;
+        if (max % min == 0) {
+            greatestCommonDivisor = min;
+        }
+
+        while (max % min > 0) {
+            greatestCommonDivisor = max % min;
+            max = min;
+            min = greatestCommonDivisor;
+        }
+        System.out.println("НОД = " + greatestCommonDivisor);
     }
 }

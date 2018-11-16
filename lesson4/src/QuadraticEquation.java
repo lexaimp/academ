@@ -1,4 +1,4 @@
-//1. Сейчас до некоторых случаев код никогда не дойдет
+//import
 
 import java.util.Scanner;
 
@@ -21,13 +21,15 @@ public class QuadraticEquation {
         if (Math.abs(a) <= epsilon) {
             System.out.println("Коэфициент а равен 0, уравнение не является квадратным");
 
-            double x = -(c / b);
-            System.out.println("x = " + x);
-        } else if (Math.abs(a) <= epsilon && Math.abs(b) <= epsilon) {
-            if (Math.abs(c) <= epsilon) {
-                System.out.println("х любое");
+            if (Math.abs(b) <= epsilon) {
+                if (Math.abs(c) <= epsilon) {
+                    System.out.println("х любое");
+                } else {
+                    System.out.println("Кореней нет");
+                }
             } else {
-                System.out.println("Кореней нет");
+                double x = -(c / b);
+                System.out.println("x = " + x);
             }
         } else {
             double discriminant = Math.pow(b, 2) - 4 * a * c;

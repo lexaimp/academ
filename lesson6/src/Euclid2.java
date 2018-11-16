@@ -1,14 +1,11 @@
-//1. Тут не важно какое число больше, это не нужно отдельно рассматривать
-
-public class Euclid {
+public class Euclid2 {
     public static void main(String[] args) {
         System.out.println(getGcd(45, 165));
     }
 
     private static int getGcd(int a, int b) {
         int gcd = 0;
-
-        if (b > a) {
+        if (b > a){
             int temp = a;
             a = b;
             b = temp;

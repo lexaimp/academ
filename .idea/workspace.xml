@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae8d7143-990c-488a-aced-22b5d46e6e3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lesson6/src/Euclid2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson4/src/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/src/QuadraticEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson6/src/Euclid.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6/src/Euclid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/src/Blur.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/Blur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,43 +26,45 @@
     <session id="-1284376007">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="56" />
+          <entry key="project.closed" value="61" />
           <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.4" value="12" />
-          <entry key="project.open.time.5" value="42" />
+          <entry key="project.open.time.4" value="13" />
+          <entry key="project.open.time.5" value="44" />
           <entry key="project.open.time.6" value="7" />
-          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="70" />
+          <entry key="project.opened" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="770" />
-          <entry key="png" value="1" />
+          <entry key="java" value="779" />
+          <entry key="jpg" value="1" />
+          <entry key="png" value="3" />
           <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="1" />
-          <entry key="JAVA" value="770" />
+          <entry key="Image" value="4" />
+          <entry key="JAVA" value="779" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="34300" />
-          <entry key="txt" value="1410" />
+          <entry key="java" value="34764" />
+          <entry key="txt" value="1412" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="34300" />
-          <entry key="PLAIN_TEXT" value="1410" />
+          <entry key="JAVA" value="34764" />
+          <entry key="PLAIN_TEXT" value="1412" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -99,52 +105,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson12/src/SelectionSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson13/src/StringBuilder1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson13/src/CountEntry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="9" column="23" selection-start-line="2" selection-end-line="29" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/src/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="11" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/src/Blur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+            <state relative-caret-position="384">
+              <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
               <folding>
-                <element signature="e#0#2839#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -152,58 +118,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson12/src/HeapSort.java">
+        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/awt/image/BufferedImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson8/src/Contact.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
-                <element signature="e#662#663#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
-                <element signature="e#766#767#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson8/src/RangeMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson8/src/Range.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            <state relative-caret-position="633">
+              <caret line="313" column="34" lean-forward="true" selection-start-line="313" selection-start-column="34" selection-end-line="313" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -235,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lesson9/src/it/java/academ/lesson9/CountingSimbolMain.java" />
         <option value="$PROJECT_DIR$/lesson5/src/DigitNumber.java" />
         <option value="$PROJECT_DIR$/lesson9/src/it/java/academ/lesson9/CountingSymbolMain.java" />
         <option value="$PROJECT_DIR$/lesson9/src/PalindromeMain.java" />
@@ -268,7 +185,6 @@
         <option value="$PROJECT_DIR$/lesson13/src/StringBuilde.java" />
         <option value="$PROJECT_DIR$/lesson13/src/String_Bulider.java" />
         <option value="$PROJECT_DIR$/lesson13/src/ReadingFile.java" />
-        <option value="$PROJECT_DIR$/lesson4/src/QuadraticEquation.java" />
         <option value="$PROJECT_DIR$/input.txt" />
         <option value="$PROJECT_DIR$/lesson13/src/StringBuilder.java" />
         <option value="$PROJECT_DIR$/lesson13/src/String_Builder.java" />
@@ -279,19 +195,21 @@
         <option value="$PROJECT_DIR$/lesson13/src/ToUpRegister.java" />
         <option value="$PROJECT_DIR$/lesson13/src/SplitString.java" />
         <option value="$PROJECT_DIR$/lesson13/src/CountEntry.java" />
-        <option value="$PROJECT_DIR$/lesson6/src/Euclid.java" />
         <option value="$PROJECT_DIR$/lesson12/src/HeapSort.java" />
         <option value="$PROJECT_DIR$/lesson12/src/SelectionSort.java" />
         <option value="$PROJECT_DIR$/lesson13/src/StringBuilder1.java" />
-        <option value="$PROJECT_DIR$/test/src/Test.java" />
         <option value="$PROJECT_DIR$/test/src/blur.java" />
+        <option value="$PROJECT_DIR$/test/src/Test.java" />
+        <option value="$PROJECT_DIR$/lesson6/src/Euclid2.java" />
+        <option value="$PROJECT_DIR$/lesson6/src/Euclid.java" />
+        <option value="$PROJECT_DIR$/lesson4/src/QuadraticEquation.java" />
         <option value="$PROJECT_DIR$/test/src/Blur.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="955" />
-    <option name="y" value="62" />
+    <option name="x" value="261" />
+    <option name="y" value="38" />
     <option name="width" value="1021" />
     <option name="height" value="855" />
   </component>
@@ -303,6 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -310,6 +229,28 @@
             <path>
               <item name="academ" type="b2602c69:ProjectViewProjectNode" />
               <item name="academ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="academ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="academ" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="academ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="academ" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="academ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="academ" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="academ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="academ" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="academ" type="b2602c69:ProjectViewProjectNode" />
@@ -337,13 +278,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541041020469" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ImageTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -377,23 +317,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HeapSort" />
-      <module name="lesson12" />
+    <configuration name="Euclid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Euclid" />
+      <module name="lesson6" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SelectionSort" />
-      <module name="lesson12" />
+    <configuration name="Euclid2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Euclid2" />
+      <module name="lesson6" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringBuilder1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringBuilder1" />
-      <module name="lesson13" />
+    <configuration name="QuadraticEquation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuadraticEquation" />
+      <module name="lesson4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -406,19 +346,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StringBuilder1" />
-      <item itemvalue="Application.HeapSort" />
-      <item itemvalue="Application.SelectionSort" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.Blur" />
+      <item itemvalue="Application.Euclid" />
+      <item itemvalue="Application.Euclid2" />
+      <item itemvalue="Application.QuadraticEquation" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Blur" />
+        <item itemvalue="Application.QuadraticEquation" />
+        <item itemvalue="Application.Euclid2" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.StringBuilder1" />
-        <item itemvalue="Application.SelectionSort" />
-        <item itemvalue="Application.HeapSort" />
+        <item itemvalue="Application.Euclid" />
       </list>
     </recent_temporary>
   </component>
@@ -432,13 +372,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537706222213</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Доделал задачу про треугольник">
-      <created>1537714391019</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1537714391019</updated>
     </task>
     <task id="LOCAL-00004" summary="Доавил задачу про следущую дату">
       <created>1537714523646</created>
@@ -776,7 +709,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541945635114</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="11.11.18 home +">
+      <created>1541945991794</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1541945991794</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -792,7 +732,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28944564" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -801,7 +741,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.31351352" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.31351352" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37513512" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -821,7 +761,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26545843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.59625393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -830,8 +770,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.31351352" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37527114" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.31351352" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37513512" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
@@ -854,7 +794,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Макс подстрока, вроде сделал" />
     <MESSAGE value="Макс подстрока, вроде сделал 2" />
     <MESSAGE value="Будем надеяться на правлиьный палиндром" />
     <MESSAGE value="Хрень какая то" />
@@ -879,7 +818,8 @@
     <MESSAGE value="02.11.18 home" />
     <MESSAGE value="05.11.18 home" />
     <MESSAGE value="11.11.18 home" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.11.18 home" />
+    <MESSAGE value="11.11.18 home +" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.11.18 home +" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -895,27 +835,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lesson5/src/Switch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson5/src/TenNumbersString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson7/src/WriteFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lesson10/src/AverageOfArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1113,13 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson4/src/QuadraticEquation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/file2.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1165,13 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson6/src/Euclid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lesson12/src/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1186,16 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson13/src/CountEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="9" column="23" selection-start-line="2" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lesson12/src/HeapSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -1205,24 +1100,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson8/src/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="272">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1240,22 +1119,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/Test.java">
+    <entry file="file://$PROJECT_DIR$/lesson13/src/CountEntry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="144">
+          <caret line="9" column="23" selection-start-line="2" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson6/src/Euclid2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" selection-start-line="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#66#67#0" expanded="true" />
+            <element signature="e#117#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson6/src/Euclid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson4/src/QuadraticEquation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/out.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/awt/image/BufferedImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="313" column="34" lean-forward="true" selection-start-line="313" selection-start-column="34" selection-end-line="313" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/src/Blur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+        <state relative-caret-position="384">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
           <folding>
-            <element signature="e#0#2839#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
