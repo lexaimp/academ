@@ -1,0 +1,93 @@
+{
+  "countryList": {
+    "name": [
+      {
+        "-id": "1",
+        "englishName": "Russia",
+        "russianName": "Россия",
+        "countryCode": "7",
+        "currencyCode": "810",
+        "cities": {
+          "cName": [
+            {
+              "-id": "1",
+              "ruName": "Новосибирск",
+              "engName": "Novosibirsk",
+              "populations": "1511000"
+            },
+            {
+              "-id": "2",
+              "ruName": "Москва",
+              "engName": "Moscow",
+              "populations": "11920000"
+            },
+            {
+              "-id": "3",
+              "ruName": "Владивосток",
+              "engName": "Vladivostok",
+              "populations": "598927"
+            }
+          ]
+        }
+      },
+      {
+        "-id": "2",
+        "englishName": "America",
+        "russianName": "Америка",
+        "countryCode": "1",
+        "currencyCode": "840",
+        "cities": {
+          "cName": [
+            {
+              "-id": "1",
+              "ruName": "Нью Йорк",
+              "engName": "New York",
+              "populations": "8623000"
+            },
+            {
+              "-id": "2",
+              "ruName": "Лос Анджелес",
+              "engName": "Los Angeles",
+              "populations": "4000000"
+            },
+            {
+              "-id": "3",
+              "ruName": "Сан-Франциско",
+              "engName": "San Francisco",
+              "populations": "884363"
+            }
+          ]
+        }
+      },
+      {
+        "-id": "3",
+        "englishName": "China",
+        "russianName": "Китай",
+        "countryCode": "86",
+        "currencyCode": "156",
+        "cities": {
+          "cName": [
+            {
+              "-id": "1",
+              "ruName": "Пекин",
+              "engName": "Beijing",
+              "populations": "21710000"
+            },
+            {
+              "-id": "2",
+              "ruName": "Шанхай",
+              "engName": "Shanghai",
+              "populations": "24180000"
+            },
+            {
+              "-id": "3",
+              "ruName": "Гонконг",
+              "engName": "Hong Kong",
+              "populations": "7392000"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -18,21 +18,12 @@ public class Blur {
         int height = raster.getHeight();
 
         final int COLORS_COUNT_IN_RGB = 3;
-        int matrixWidth = 3;
-        int matrixHeight = 3;
-
         BufferedImage imageCopy = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         WritableRaster rasterCopy = imageCopy.getRaster();
         // создаем массив, в котором будет содержаться текущий пиксель
         int[] pixel = new int[COLORS_COUNT_IN_RGB];
         // создание матрицы для хранения необходимого эффекта
-        double[][] matrixBlur = new double[matrixWidth][matrixHeight];
-        // заполнение матрицы
-        for (int i = 0; i < matrixWidth; i++) {
-            for (int j = 0; j < matrixHeight; j++) {
-                matrixBlur[i][j] = (double) 1 / 9;
-            }
-        }
+        double[][] matrixBlur = getMatrix(3, 3);
         // цикл по строкам картинки
         for (int j = 1; j < height - 1; ++j) {
             // цикл пикселям строки
@@ -51,35 +42,40 @@ public class Blur {
                         raster.getPixel(n, m, pixel);
 
                         r += matrixBlur[index1][index2] * pixel[0];
-                        if (r < 0) {
-                            r = 0;
-                        } else if (r > 255) {
-                            r = 255;
-                        }
                         g += matrixBlur[index1][index2] * pixel[1];
-                        if (g < 0) {
-                            g = 0;
-                        } else if (g > 255) {
-                            g = 255;
-                        }
                         b += matrixBlur[index1][index2] * pixel[2];
-                        if (b < 0) {
-                            b = 0;
-                        } else if (b > 255) {
-                            b = 255;
-                        }
                         index2++;
                     }
                     index1++;
                 }
-                pixel[0] = (int) r;
-                pixel[1] = (int) g;
-                pixel[2] = (int) b;
+                pixel[0] = getSat(r);
+                pixel[1] = getSat(g);
+                pixel[2] = getSat(b);
 
                 raster.setPixel(i, j, pixel);
             }
         }
 
         ImageIO.write(image, "png", new File("out.png"));
+    }
+
+    private static double[][] getMatrix(int matrixWidth, int matrixHeight) {
+        double[][] matrix = new double[matrixWidth][matrixHeight];
+
+        for (int i = 0; i < matrixWidth; i++) {
+            for (int j = 0; j < matrixHeight; j++) {
+                matrix[i][j] = (double) 1 / 9;
+            }
+        }
+        return matrix;
+    }
+
+    private static int getSat(double component) {
+        if (component < 0) {
+            return 0;
+        } else if (component > 255) {
+            return 255;
+        }
+        return (int) component;
     }
 }

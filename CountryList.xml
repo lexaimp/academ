@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<countryList>
+    <name id="1">
+        <englishName>Russia</englishName>
+        <russianName>Россия</russianName>
+        <countryCode>7</countryCode>
+        <currencyCode>810</currencyCode>
+        <cities>
+            <cName id="1">
+                <ruName>Новосибирск</ruName>
+                <engName>Novosibirsk</engName>
+                <populations>1511000</populations>
+            </cName>
+            <cName id="2">
+                <ruName>Москва</ruName>
+                <engName>Moscow</engName>
+                <populations>11920000</populations>
+            </cName>
+            <cName id="3">
+                <ruName>Владивосток</ruName>
+                <engName>Vladivostok</engName>
+                <populations>598927</populations>
+            </cName>
+        </cities>
+    </name>
+    <name id="2">
+        <englishName>America</englishName>
+        <russianName>Америка</russianName>
+        <countryCode>1</countryCode>
+        <currencyCode>840</currencyCode>
+        <cities>
+            <cName id="1">
+                <ruName>Нью Йорк</ruName>
+                <engName>New York</engName>
+                <populations>8623000</populations>
+            </cName>
+            <cName id="2">
+                <ruName>Лос Анджелес</ruName>
+                <engName>Los Angeles</engName>
+                <populations>4000000</populations>
+            </cName>
+            <cName id="3">
+                <ruName>Сан-Франциско</ruName>
+                <engName>San Francisco</engName>
+                <populations>884363</populations>
+            </cName>
+        </cities>
+    </name>
+    <name id="3">
+        <englishName>China</englishName>
+        <russianName>Китай</russianName>
+        <countryCode>86</countryCode>
+        <currencyCode>156</currencyCode>
+        <cities>
+            <cName id="1">
+                <ruName>Пекин</ruName>
+                <engName>Beijing</engName>
+                <populations>21710000</populations>
+            </cName>
+            <cName id="2">
+                <ruName>Шанхай</ruName>
+                <engName>Shanghai</engName>
+                <populations>24180000</populations>
+            </cName>
+            <cName id="3">
+                <ruName>Гонконг</ruName>
+                <engName>Hong Kong</engName>
+                <populations>7392000</populations>
+            </cName>
+        </cities>
+    </name>
+</countryList>
