@@ -5,10 +5,16 @@ import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
 import java.io.File;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Blur {
 
     public static void main(String[] args) throws IOException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите размер матрицы");
+        // создание матрицы для хранения необходимого эффекта
+        double[][] matrixBlur = getMatrix(scanner.nextInt(), scanner.nextInt());
+
         // читаем картинку из файлу image.jpg в объект класса BufferedImage
         BufferedImage image = ImageIO.read(new File("image.jpg"));
         WritableRaster raster = image.getRaster();
@@ -22,14 +28,10 @@ public class Blur {
         WritableRaster rasterCopy = imageCopy.getRaster();
         // создаем массив, в котором будет содержаться текущий пиксель
         int[] pixel = new int[COLORS_COUNT_IN_RGB];
-        // создание матрицы для хранения необходимого эффекта
-        double[][] matrixBlur = getMatrix(3, 3);
         // цикл по строкам картинки
         for (int j = 1; j < height - 1; ++j) {
             // цикл пикселям строки
             for (int i = 1; i < width - 1; ++i) {
-                // получаем текущий пиксель с координатами i,j
-                rasterCopy.getPixel(i, j, pixel);
 
                 double r = 0;
                 double g = 0;
