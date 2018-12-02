@@ -4,20 +4,16 @@ public class Euclid2 {
     }
 
     private static int getGcd(int a, int b) {
-        int gcd = 0;
-        if (b > a){
-            int temp = a;
-            a = b;
-            b = temp;
+        if (b != 0){
+            while (a % b != 0){
+                int temp = a;
+                a = b;
+                b = temp % b;
+            }
+            return b;
+        } else if (a !=0){
+            return a;
         }
-        if (a % b == 0) {
-            gcd = b;
-        }
-        while (a % b != 0) {
-            gcd = a % b;
-            a = b;
-            b = gcd;
-        }
-        return gcd;
+        return 0;
     }
 }
