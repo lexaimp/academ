@@ -32,7 +32,6 @@ public class MatrixDeterminant {
         }
         if (matrix.length == 3) {
             for (int i = 1; i <=3; i++){
-                matrix[0][i]+
             }
         }
         return determinant;
