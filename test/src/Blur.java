@@ -10,8 +10,8 @@ public class Blur {
 
     public static void main(String[] args) throws IOException {
         // создание переменных для хранения размера матрицы
-        int matrixWidth = 3;
-        int matrixHeight = 3;
+        int matrixWidth = 7;
+        int matrixHeight = 7;
         // создание матрицы для хранения необходимого эффекта
         double[][] matrixBlur = getMatrix(matrixWidth, matrixHeight);
 
@@ -33,7 +33,7 @@ public class Blur {
         int countElementsOfWidthDesiredPixel = matrixWidth / 2;
         int countElementsOfHeightDesiredPixel = matrixHeight / 2;
 
-        // цикл по строкам картинки
+        // цикл по строкам картинки+
         for (int j = countElementsOfHeightDesiredPixel; j < height - countElementsOfHeightDesiredPixel; ++j) {
             // цикл пикселям строки
             for (int i = countElementsOfWidthDesiredPixel; i < width - countElementsOfWidthDesiredPixel; ++i) {
@@ -71,7 +71,7 @@ public class Blur {
 
         for (int i = 0; i < matrixWidth; i++) {
             for (int j = 0; j < matrixHeight; j++) {
-                matrix[i][j] = (double) 1 / 9;
+                matrix[i][j] = (double) 1 / (matrixWidth * matrixHeight);
             }
         }
         return matrix;
