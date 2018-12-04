@@ -31,7 +31,11 @@ public class MatrixDeterminant {
             return (matrix[0][0] * matrix[1][1]) - (matrix[1][0] * matrix[0][1]);
         }
         if (matrix.length == 3) {
-            for (int i = 1; i <=3; i++){
+            for (int k = 0; k < 3; k++) {
+                for (int j = 0; j < 2; j++) {
+                    System.out.println(matrix[k][j + 1]);
+                }
+                System.out.println();
             }
         }
         return determinant;
