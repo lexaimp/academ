@@ -10,7 +10,7 @@ public class MatrixDeterminant {
         int[][] matrix = new int[matrixWidth][matrixHeight];
         for (int i = 0; i < matrixWidth; i++) {
             for (int j = 0; j < matrixHeight; j++) {
-                matrix[i][j] = (int) (Math.random() * 30);
+                matrix[i][j] = (int) (Math.random() * 99);
             }
         }
         return matrix;
@@ -31,11 +31,15 @@ public class MatrixDeterminant {
             return (matrix[0][0] * matrix[1][1]) - (matrix[1][0] * matrix[0][1]);
         }
         if (matrix.length == 3) {
-            for (int k = 0; k < 3; k++) {
-                for (int j = 0; j < 2; j++) {
-                    System.out.println(matrix[k][j + 1]);
+            for (int i = matrix.length - 1; i >= 0; i--) {
+                for (int k = 0; k <= 2; k++) {
+                    for (int j = 1; j <= 2; j++) {
+                        if (k == i) {
+                            break;
+                        }
+                        System.out.print(matrix[k][j] + " ");
+                    }
                 }
-                System.out.println();
             }
         }
         return determinant;
