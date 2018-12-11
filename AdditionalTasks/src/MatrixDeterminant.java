@@ -30,16 +30,19 @@ public class MatrixDeterminant {
         if (matrix.length == 2) {
             return (matrix[0][0] * matrix[1][1]) - (matrix[1][0] * matrix[0][1]);
         }
-        if (matrix.length == 3) {
-            for (int i = matrix.length - 1; i >= 0; i--) {
-                for (int k = 0; k <= 2; k++) {
-                    for (int j = 1; j <= 2; j++) {
+        if (matrix.length > 2) {
+            int minorSize = matrix.length - 1;
+            int[][] minor = new int[minorSize][minorSize];
+            for (int i = 0; i <= minorSize; i++) {
+                for (int k = 0; k <= minorSize; k++) {
+                    for (int j = 1; j <= minorSize; j++) {
                         if (k == i) {
                             break;
                         }
                         System.out.print(matrix[k][j] + " ");
                     }
                 }
+//                рекурсия с минором
             }
         }
         return determinant;
